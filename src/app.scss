@@ -1,0 +1,27 @@
+@import "./components/habit/habit.scss";
+@import "./components/habits/habits.scss";
+@import "./components/header/header.scss";
+@import "./components/input/input.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import "./components/extends";
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: whitesmoke;
+}
+.grid {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr min-content;
+  grid-row-gap: 1em;
+  height: 100vh;
+  &__reset {
+    @extend %button;
+    @extend %greenBtn;
+    justify-self: center;
+    margin-bottom: 0.8em;
+  }
+}

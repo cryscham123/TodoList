@@ -1,0 +1,11 @@
+@import "../_variables";
+
+.habits {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-row-gap: $padding;
+  justify-self: center;
+  padding: 1em 0;
+  overflow: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,48 @@
+@import "../_extends";
+@import "../_variables";
+
+.habit {
+  display: grid;
+  grid-template-columns: 17rem max-content;
+  grid-column-gap: $padding;
+  justify-content: center;
+  align-items: center;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    &__title {
+    }
+    &__count {
+      @extend %count;
+    }
+  }
+  &__control {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-column-gap: $padding;
+    &__plus {
+      @extend %button;
+      @extend %controlBtn;
+      &:hover {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    &__minus {
+      @extend %button;
+      @extend %controlBtn;
+      &:hover {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    &__trash {
+      @extend %button;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

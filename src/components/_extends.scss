@@ -1,0 +1,42 @@
+%count {
+  background-color: green;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-align: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+}
+%button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+%input {
+  outline: none;
+}
+%controlBtn {
+  color: white;
+  background-color: orange;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  transition: color 0.2s ease-in-out;
+}
+%greenBtn {
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: green;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
